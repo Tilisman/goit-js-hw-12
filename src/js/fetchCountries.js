@@ -5,7 +5,6 @@ function fetchCountries(name) {
         if (response.ok) {
             return response.json();
         }
-        //пробрасываем ошибку, так как catch не всегда ловит ошибку 404
         throw new onFetchError();
     })
 };
